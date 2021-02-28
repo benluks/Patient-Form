@@ -1,10 +1,13 @@
 import React from 'react';
 import questionnaire from '../data/questions';
-import { Button, DatePicker, Form, InputNumber, Select, Row, Col } from 'antd';
+import { Layout, Typography, Image, Button, DatePicker, Form, InputNumber, Select, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import BoolQuestion from './question/BoolQuestion';
+import chariteLogo from './charite.png'
+import { Content, Footer, Header } from 'antd/lib/layout/layout';
 
 const { Option } = Select;
+const { Title } = Typography;
 
 function QuestionForm() {
   const [form] = Form.useForm();
@@ -52,9 +55,16 @@ function QuestionForm() {
           <Button type='primary' htmlType='submit'>
             Submit
           </Button>
-        </Form>
-      </Col>
-    </Row>
+              </Form>
+            </Col>
+          </Row>
+        </Content>
+        <Footer>
+          Footer
+        </Footer>
+      </Layout>
+      
+    </>
   );
 }
 
