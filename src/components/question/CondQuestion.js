@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input, Select } from 'antd';
 
-function BoolQuestion({ question, form, handleChange }) {
+function CondQuestion({ question, form, handleChange }) {
   const { Option } = Select;
 
   return (
@@ -46,4 +46,4 @@ function BoolQuestion({ question, form, handleChange }) {
   );
 }
 
-export default BoolQuestion;
+export default CondQuestion;
