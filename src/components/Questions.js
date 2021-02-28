@@ -17,9 +17,8 @@ function Questions() {
             key={index}
             question={quest}
             form={form}
-            handleChange={(value) => {
-              form.setFieldsValue({ [quest.title]: value });
-              console.log(form.getFieldValue(quest.title));
+            handleChange={(e) => {
+              form.setFieldsValue({ [quest.title]: e.target.value });
             }}
           />
         ) : (

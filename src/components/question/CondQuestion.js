@@ -1,9 +1,7 @@
 import React from 'react';
-import { Form, Input, Select } from 'antd';
+import { Form, Input, Radio } from 'antd';
 
 function CondQuestion({ question, form, handleChange }) {
-  const { Option } = Select;
-
   return (
     <>
       <Form.Item
@@ -15,10 +13,14 @@ function CondQuestion({ question, form, handleChange }) {
           },
         ]}
       >
-        <Select onChange={handleChange} placeholder='Bitte ja oder nein wählen'>
-          <Option value={true}>Ja</Option>
-          <Option value={false}>Nein</Option>
-        </Select>
+        <Radio.Group
+          style={{ float: 'left' }}
+          onChange={handleChange}
+          placeholder='Bitte ja oder nein wählen'
+        >
+          <Radio value={true}>Ja</Radio>
+          <Radio value={false}>Nein</Radio>
+        </Radio.Group>
       </Form.Item>
       <Form.Item
         noStyle
@@ -27,19 +29,21 @@ function CondQuestion({ question, form, handleChange }) {
         }
       >
         {({ getFieldValue }) =>
-          getFieldValue(question.title) ? (
-            <Form.Item
-              label={question.ifTrueQuestion}
-              rules={[
-                {
-                  required: true,
-                  message: 'Please enter your answer here',
-                },
-              ]}
-            >
-              <Input />
-            </Form.Item>
-          ) : null
+          getFieldValue(question.title)
+            ? question.ifTrueQuestion && (
+                <Form.Item
+                  label={question.ifTrueQuestion}
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please enter your answer here',
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+              )
+            : null
         }
       </Form.Item>
     </>
