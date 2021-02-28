@@ -54,7 +54,12 @@ const questionnaire = [
     ifTrueQuestion: 'Wie hoch ist die Dosis in mg?',
     trueDataType: 'int',
   },
-  { title: 'smoke', question: 'Rauchen Sie?', isMandatory: true },
+  {
+    title: 'smoke',
+    question: 'Rauchen Sie?',
+    dataType: 'bool',
+    isMandatory: true,
+  },
   {
     title: 'telephoneNumber',
     question:
