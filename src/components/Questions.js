@@ -33,9 +33,15 @@ function Questions() {
             ]}
             key={index}
           >
-            {quest.dataType === 'int' && <InputNumber min={0} />}
-            {quest.dataType === 'date' && <DatePicker />}
-            {quest.dropdown && <DDEnum quest={quest} />}
+            {quest.dataType === 'int' && (
+              <InputNumber style={{ float: 'left' }} min={0} />
+            )}
+            {quest.dataType === 'date' && (
+              <DatePicker style={{ float: 'left' }} />
+            )}
+            {quest.dropdown && (
+              <DDEnum quest={quest} style={{ float: 'left' }} />
+            )}
           </Form.Item>
         )
       )}
