@@ -24,8 +24,11 @@ function Questions() {
           />
         ) : (
           <Form.Item
-            label={<label style={CompStyle.fontStyle}>{quest.question}</label>}
-            style={{ color: 'red' }}
+            name={quest.title}
+            label={
+              <label style={CompStyle.labelFontSize}>{quest.question}</label>
+            }
+            style={CompStyle.formItem}
             rules={[
               {
                 required: quest.isMandatory,

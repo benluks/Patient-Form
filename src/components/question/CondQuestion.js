@@ -7,13 +7,17 @@ function CondQuestion({ question, form, handleChange }) {
   return (
     <>
       <Form.Item
-        label={<label style={CompStyle.fontStyle}>{question.question}</label>}
+        label={
+          <label style={CompStyle.labelFontSize}>{question.question}</label>
+        }
+        name={question.title}
         rules={[
           {
             required: question.isMandatory,
             message: 'Please enter your answer here',
           },
         ]}
+        style={CompStyle.formItem}
       >
         <Radio.Group
           style={{ float: 'left' }}
@@ -35,9 +39,10 @@ function CondQuestion({ question, form, handleChange }) {
             ? question.ifTrueQuestion && (
                 <Form.Item
                   label={question.ifTrueQuestion}
+                  name={question.question}
                   rules={[
                     {
-                      required: true,
+                      required: question.isMandatory,
                       message: 'Please enter your answer here',
                     },
                   ]}
