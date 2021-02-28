@@ -1,6 +1,6 @@
 import React from 'react';
 import questionnaire from '../data/questions';
-import { Layout, Typography, Image, Button, DatePicker, Form, InputNumber, Select, Row, Col } from 'antd';
+import { Divider, Layout, Typography, Image, Button, DatePicker, Form, InputNumber, Select, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import BoolQuestion from './question/BoolQuestion';
 import chariteLogo from './charite.png'
@@ -21,7 +21,11 @@ function QuestionForm() {
         <Content>
           <Row justify='center'>
             <Col span={12}>
+            <Divider />
+
               <Image src={chariteLogo}></Image>
+              <Divider />
+
               <Form form={form} layout='vertical' name='basic'>
                 {questionnaire.map((quest, index) =>
                   quest.dataType === 'bool' ? (
