@@ -17,8 +17,9 @@ function QuestionForm() {
           <Row justify='center'>
             <Col span={12}>
               <Divider></Divider>
-            <Image src={chariteLogo}></Image>
-            <Divider></Divider>
+              <Image src={chariteLogo}></Image>
+              <Divider></Divider>
+              <Title>Fragebogen</Title>
               <Questions />
             </Col>
           </Row>
