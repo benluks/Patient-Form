@@ -4,6 +4,7 @@ import { Button, DatePicker, Form, InputNumber } from 'antd';
 
 import CondQuestion from './question/CondQuestion';
 import DDEnum from './question/DDEnum';
+import CompStyle from './CompStyle';
 
 import questionnaire from '../data/questions';
 
@@ -23,7 +24,8 @@ function Questions() {
           />
         ) : (
           <Form.Item
-            label={quest.question}
+            label={<label style={CompStyle.fontStyle}>{quest.question}</label>}
+            style={{ color: 'red' }}
             rules={[
               {
                 required: quest.isMandatory,
