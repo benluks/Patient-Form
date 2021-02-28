@@ -1,5 +1,5 @@
 import React from 'react';
-import questionnaire from '../../data/questions';
+import questionnaire from '../data/questions';
 import { Button, DatePicker, Form, InputNumber, Select, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 
