@@ -2,7 +2,7 @@ import React from 'react';
 import questionnaire from '../data/questions';
 import { Divider, Layout, Typography, Image, Button, DatePicker, Form, InputNumber, Select, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
-import BoolQuestion from './question/BoolQuestion';
+import CondQuestion from './question/BoolQuestion';
 import chariteLogo from './charite.png'
 import { Content, Footer, Header } from 'antd/lib/layout/layout';
 
@@ -29,7 +29,7 @@ function QuestionForm() {
               <Form form={form} layout='vertical' name='basic'>
                 {questionnaire.map((quest, index) =>
                   quest.dataType === 'bool' ? (
-                    <BoolQuestion
+                    <CondQuestion
                       key={index}
                       question={quest}
                       form={form}
@@ -51,15 +51,7 @@ function QuestionForm() {
                       >
                         {quest.dataType === 'int' && <InputNumber min={0} />}
                         {quest.dataType === 'date' && <DatePicker />}
-                        {quest.dropdown && (
-                          <Select placeholder={`bitte wählen`}>
-                            {quest.dropdown.map((opt, index) => (
-                              <Option value={opt} key={index}>
-                                {opt}
-                              </Option>
-                            ))}
-                          </Select>
-                        )}
+                        {quest.dropdown && <DDEnum quest={quest} />}
                       </Form.Item>
                     )
                 )}
