@@ -7,12 +7,12 @@ import MainText from './MainText';
 
 function Brochure() {
   return (
-    <Typography style={{ marginBottom: '150px' }}>
+    <>
       <MainText />
       {Risks.map((risk, index) => (
         <InfoList title={risk.title} list={risk.risks} key={index} />
       ))}
-    </Typography>
+    </>
   );
 }
 

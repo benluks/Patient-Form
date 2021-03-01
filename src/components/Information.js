@@ -1,24 +1,19 @@
 import React from 'react';
 
-import { Typography } from 'antd';
-import CompStyle from './CompStyle';
-import { ClockCircleOutlined } from '@ant-design/icons';
+import { Typography, Image } from 'antd';
 import Brochure from './information/Brochure';
 import TimeLine from './information/TimeLine';
 
 import timeline from '../data/timeline';
-
-const { Title, Paragraph } = Typography;
+import aufklaerung from './aufklaerung.png';
 
 function Information() {
   return (
     <>
-      <Typography>
+      <Image style={{ padding: '48px 160px' }} src={aufklaerung}></Image>
+      <Typography style={{ marginBottom: '150px' }}>
         <Brochure />
-        <Title level={2} style={{ marginBottom: '48px' }}>
-          Vor der Operation
-        </Title>
-        <TimeLine timeline={timeline} size={48} />
+        <TimeLine timeline={timeline} />
       </Typography>
     </>
   );
