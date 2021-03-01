@@ -1,12 +1,14 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import 'antd/dist/antd.css';
 
 import Questions from './Questions';
-import Information from './Information';
 import Format from './format/Format';
 
-function QuestionForm() {
+function QuestionForm({ location }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return <Format children={<Questions />} />;
 }
 

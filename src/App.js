@@ -2,11 +2,21 @@ import './App.css';
 import Aufklaerung from './Aufklaerung';
 import QuestionForm from './components/QuestionForm';
 
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 function App() {
   return (
     <div className='App'>
-      <Aufklaerung />
-      <QuestionForm />
+      <Router>
+        <Switch>
+          <Route exact path='/'>
+            <Aufklaerung />
+          </Route>
+          <Route exact path='/fragebogen'>
+            <QuestionForm />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

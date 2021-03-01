@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Typography, Image } from 'antd';
+import { Button, Typography, Image } from 'antd';
 import Brochure from './information/Brochure';
 import TimeLine from './information/TimeLine';
 
@@ -15,6 +16,9 @@ function Information() {
         <Brochure />
         <TimeLine timeline={timeline} />
       </Typography>
+      <Button type='primary' style={{ margin: '48px' }}>
+        <Link to='/fragebogen'>Zum Fragebogen</Link>
+      </Button>
     </>
   );
 }
