@@ -18,9 +18,7 @@ function QuestionForm() {
         <Content>
           <Row justify='center'>
             <Col span={12}>
-              <Divider></Divider>
-              <Image src={chariteLogo}></Image>
-              <Divider></Divider>
+              <Image style={{ padding: '24px 0px' }} src={chariteLogo}></Image>
               <Information />
               <Questions />
             </Col>
