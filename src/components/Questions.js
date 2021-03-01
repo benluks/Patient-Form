@@ -14,7 +14,7 @@ function Questions() {
     <Form form={form} layout='vertical' name='basic'>
       {questionnaire.map((quest, index) =>
         quest.dataType === 'bool' ? (
-          <Card style={{ borderRadius: '1rem' }}>
+          <Card title={quest.question} style={{ borderRadius: '1rem' }}>
             <CondQuestion
               key={index}
               question={quest}
@@ -22,14 +22,14 @@ function Questions() {
               handleChange={(e) => {
                 form.setFieldsValue({ [quest.title]: e.target.value });
               }}
-            />{' '}
+            />
           </Card>
         ) : (
-          <Card>
+          <Card title={quest.question}>
             <Form.Item
-              label={
-                <label style={CompStyle.fontStyle}>{quest.question}</label>
-              }
+              // label={
+              //   <label style={CompStyle.fontStyle}>{quest.question}</label>
+              // }
               style={{ color: 'red' }}
               rules={[
                 {

@@ -7,7 +7,7 @@ function CondQuestion({ question, form, handleChange }) {
   return (
     <>
       <Form.Item
-        label={<label style={CompStyle.fontStyle}>{question.question}</label>}
+        // label={<label style={CompStyle.fontStyle}>{question.question}</label>}
         rules={[
           {
             required: question.isMandatory,
