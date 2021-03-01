@@ -13,14 +13,13 @@ const { Title, Paragraph } = Typography;
 function Questions() {
   const [form] = Form.useForm();
   return (
-    <Form form={form} layout='vertical' name='basic'>
-      <Title>Fragebogen</Title>
     <Form
       form={form}
       style={{ marginBotton: '48px' }}
       layout='vertical'
       name='basic'
     >
+            <Title>Fragebogen</Title>
       {questionnaire.map((quest, index) =>
         quest.dataType === 'bool' ? (
           <Card title={quest.question} style={CompStyle.qCardStyle}>
