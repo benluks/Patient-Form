@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import chariteLogo from './charite.png';
 import { Content, Footer, Header } from 'antd/lib/layout/layout';
 import Questions from './Questions';
+import Information from './Information';
 
 const { Title } = Typography;
 
@@ -19,7 +20,7 @@ function QuestionForm() {
               <Divider></Divider>
               <Image src={chariteLogo}></Image>
               <Divider></Divider>
-              <Title>Fragebogen</Title>
+              <Information />
               <Questions />
             </Col>
           </Row>
