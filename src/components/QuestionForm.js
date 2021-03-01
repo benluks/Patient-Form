@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Layout, Typography, Row, Col, Divider } from 'antd';
+import { Image, Layout, Typography, Row, Col } from 'antd';
 import { Content, Footer, Header } from 'antd/lib/layout/layout';
 import 'antd/dist/antd.css';
 
@@ -18,7 +18,10 @@ function QuestionForm() {
         <Content style={{ background: 'white' }}>
           <Row justify='center'>
             <Col span={12}>
-              <Image style={{ padding: '96px' }} src={chariteLogo}></Image>
+              <Image
+                style={{ padding: '48px 160px' }}
+                src={chariteLogo}
+              ></Image>
               <Information />
               <Questions />
             </Col>

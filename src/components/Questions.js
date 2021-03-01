@@ -5,6 +5,7 @@ import { Button, Card, DatePicker, Form, InputNumber } from 'antd';
 import CondQuestion from './question/CondQuestion';
 import DDEnum from './question/DDEnum';
 import CompStyle from './CompStyle';
+import '../App.css';
 
 import questionnaire from '../data/questions';
 
@@ -14,7 +15,7 @@ function Questions() {
     <Form form={form} layout='vertical' name='basic'>
       {questionnaire.map((quest, index) =>
         quest.dataType === 'bool' ? (
-          <Card title={quest.question} style={{ borderRadius: '1rem' }}>
+          <Card title={quest.question} style={CompStyle.qCardStyle}>
             <CondQuestion
               key={index}
               question={quest}
@@ -25,7 +26,7 @@ function Questions() {
             />
           </Card>
         ) : (
-          <Card title={quest.question}>
+          <Card title={quest.question} style={CompStyle.qCardStyle}>
             <Form.Item
               // label={
               //   <label style={CompStyle.fontStyle}>{quest.question}</label>
@@ -52,7 +53,8 @@ function Questions() {
           </Card>
         )
       )}
-      <Button type='primary' htmlType='submit'>
+      {/* left margin on button to align with questions */}
+      <Button type='primary' htmlType='submit' style={{ marginLeft: '24px' }}>
         Submit
       </Button>
     </Form>

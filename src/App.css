@@ -10,6 +10,12 @@
   }
 }
 
+div .ant-card-head-title {
+  overflow: unset;
+  white-space: unset;
+  word-wrap: break-word;
+ 
+}
 
 .App-header {
   background-color: #61dafb;
