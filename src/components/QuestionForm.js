@@ -1,10 +1,11 @@
 import React from 'react';
 import { Image, Layout, Typography, Row, Col, Divider } from 'antd';
+import { Content, Footer, Header } from 'antd/lib/layout/layout';
 import 'antd/dist/antd.css';
 
 import chariteLogo from './charite.png';
-import { Content, Footer, Header } from 'antd/lib/layout/layout';
 import Questions from './Questions';
+import CompStyle from './CompStyle';
 
 const { Title } = Typography;
 
@@ -12,7 +13,7 @@ function QuestionForm() {
   return (
     <>
       <Layout>
-        <Header>Header</Header>
+        <Header style={CompStyle.headerStyle}>Header</Header>
         <Content>
           <Row justify='center'>
             <Col span={12}>
