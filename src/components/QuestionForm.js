@@ -16,10 +16,10 @@ function QuestionForm() {
       <Layout>
         <Header style={CompStyle.headerStyle}>
         <Image
-                        style={{ padding: '30px' }}
+            style={{ padding: '30px' }}
                 src={chariteLogo}
-                width={400}
-              ></Image>
+                width={250}
+        ></Image>
         </Header>
         <Content style={{ background: 'white' }}>
           <Row justify='center'>
