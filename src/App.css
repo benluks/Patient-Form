@@ -29,6 +29,19 @@ div .ant-card-head-title {
   color: white;
 }
 
+
+.ant-list-item {
+  padding-left: 0!important;
+  margin-left: 0!important;
+  /* border-bottom: none!important; */
+
+}
+
+ul.ant-list-items  {
+  list-style: unset!important;
+  list-style-type: circle!important;
+}
+
 .App-link {
   color: #61dafb;
 }
