@@ -12,7 +12,12 @@ import questionnaire from '../data/questions';
 function Questions() {
   const [form] = Form.useForm();
   return (
-    <Form form={form} layout='vertical' name='basic'>
+    <Form
+      form={form}
+      style={{ marginBotton: '48px' }}
+      layout='vertical'
+      name='basic'
+    >
       {questionnaire.map((quest, index) =>
         quest.dataType === 'bool' ? (
           <Card title={quest.question} style={CompStyle.qCardStyle}>
@@ -54,7 +59,11 @@ function Questions() {
         )
       )}
       {/* left margin on button to align with questions */}
-      <Button type='primary' htmlType='submit' style={{ marginLeft: '24px' }}>
+      <Button
+        type='primary'
+        htmlType='submit'
+        style={{ margin: '0 0 4rem 1.5rem' }}
+      >
         Submit
       </Button>
     </Form>

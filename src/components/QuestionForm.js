@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Layout, Typography, Row, Col } from 'antd';
+import { Image, Layout, Typography, Row, Col, Divider } from 'antd';
 import { Content, Footer, Header } from 'antd/lib/layout/layout';
 import 'antd/dist/antd.css';
 
