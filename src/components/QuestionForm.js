@@ -15,12 +15,10 @@ function QuestionForm() {
     <>
       <Layout>
         <Header style={CompStyle.headerStyle}>Header</Header>
-        <Content>
+        <Content style={{ background: 'white' }}>
           <Row justify='center'>
             <Col span={12}>
-              <Divider></Divider>
-              <Image src={chariteLogo}></Image>
-              <Divider></Divider>
+              <Image style={{ padding: '96px' }} src={chariteLogo}></Image>
               <Information />
               <Questions />
             </Col>
