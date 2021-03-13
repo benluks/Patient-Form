@@ -1,5 +1,4 @@
 import React from 'react';
-import { Typography } from 'antd';
 import Risks from '../../data/risks';
 
 import InfoList from './InfoList';

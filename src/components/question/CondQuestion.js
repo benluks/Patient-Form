@@ -1,13 +1,10 @@
 import React from 'react';
 import { Form, Input, Radio } from 'antd';
 
-import CompStyle from '../CompStyle';
-
 function CondQuestion({ question, form, handleChange }) {
   return (
     <>
       <Form.Item
-        // label={<label style={CompStyle.fontStyle}>{question.question}</label>}
         rules={[
           {
             required: question.isMandatory,
