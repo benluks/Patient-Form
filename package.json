@@ -1,6 +1,7 @@
 {
 
   "name": "patient-form-showcase",
+  "homepage": "http://benluks.github.io/Patient-Form/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
