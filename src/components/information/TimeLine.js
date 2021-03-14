@@ -20,6 +20,7 @@ function TimeLine({ timeline }) {
                 style={{ fontSize: '16px', color: colors[index] }}
               />
             }
+            key={index}
           >
             <b className='timeline-time'>{item.time}</b>
             <p

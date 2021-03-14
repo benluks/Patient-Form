@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <Router>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/Patient-Form'>
             <Aufklaerung />
           </Route>
           <Route exact path='/fragebogen'>
