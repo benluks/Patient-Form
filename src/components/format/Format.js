@@ -17,7 +17,9 @@ function Format({ children }) {
       </Header>
       <Content style={{ background: 'white' }}>
         <Row justify='center'>
-          <Col span={12}>{children}</Col>
+          <Col sm={{ span: 12 }} xs={{ span: 22 }}>
+            {children}
+          </Col>
         </Row>
       </Content>
       <Footer>Footer</Footer>
