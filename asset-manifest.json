@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Patient-Form/static/css/main.7a098bdc.chunk.css",
-    "main.js": "/Patient-Form/static/js/main.71326d79.chunk.js",
-    "main.js.map": "/Patient-Form/static/js/main.71326d79.chunk.js.map",
-    "runtime-main.js": "/Patient-Form/static/js/runtime-main.a3984edd.js",
-    "runtime-main.js.map": "/Patient-Form/static/js/runtime-main.a3984edd.js.map",
-    "static/css/2.b88ae1e3.chunk.css": "/Patient-Form/static/css/2.b88ae1e3.chunk.css",
-    "static/js/2.c1e8906c.chunk.js": "/Patient-Form/static/js/2.c1e8906c.chunk.js",
-    "static/js/2.c1e8906c.chunk.js.map": "/Patient-Form/static/js/2.c1e8906c.chunk.js.map",
-    "index.html": "/Patient-Form/index.html",
-    "static/css/2.b88ae1e3.chunk.css.map": "/Patient-Form/static/css/2.b88ae1e3.chunk.css.map",
-    "static/css/main.7a098bdc.chunk.css.map": "/Patient-Form/static/css/main.7a098bdc.chunk.css.map",
-    "static/js/2.c1e8906c.chunk.js.LICENSE.txt": "/Patient-Form/static/js/2.c1e8906c.chunk.js.LICENSE.txt",
-    "static/media/aufklaerung.5deb3a21.png": "/Patient-Form/static/media/aufklaerung.5deb3a21.png",
-    "static/media/charite.c1bfc3c2.png": "/Patient-Form/static/media/charite.c1bfc3c2.png",
-    "static/media/fragen.9e84c2b6.png": "/Patient-Form/static/media/fragen.9e84c2b6.png"
+    "main.css": "/static/css/main.7a098bdc.chunk.css",
+    "main.js": "/static/js/main.71326d79.chunk.js",
+    "main.js.map": "/static/js/main.71326d79.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.508d5160.js",
+    "runtime-main.js.map": "/static/js/runtime-main.508d5160.js.map",
+    "static/css/2.b88ae1e3.chunk.css": "/static/css/2.b88ae1e3.chunk.css",
+    "static/js/2.f3ac33bd.chunk.js": "/static/js/2.f3ac33bd.chunk.js",
+    "static/js/2.f3ac33bd.chunk.js.map": "/static/js/2.f3ac33bd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.b88ae1e3.chunk.css.map": "/static/css/2.b88ae1e3.chunk.css.map",
+    "static/css/main.7a098bdc.chunk.css.map": "/static/css/main.7a098bdc.chunk.css.map",
+    "static/js/2.f3ac33bd.chunk.js.LICENSE.txt": "/static/js/2.f3ac33bd.chunk.js.LICENSE.txt",
+    "static/media/aufklaerung.5deb3a21.png": "/static/media/aufklaerung.5deb3a21.png",
+    "static/media/charite.c1bfc3c2.png": "/static/media/charite.c1bfc3c2.png",
+    "static/media/fragen.9e84c2b6.png": "/static/media/fragen.9e84c2b6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a3984edd.js",
+    "static/js/runtime-main.508d5160.js",
     "static/css/2.b88ae1e3.chunk.css",
-    "static/js/2.c1e8906c.chunk.js",
+    "static/js/2.f3ac33bd.chunk.js",
     "static/css/main.7a098bdc.chunk.css",
     "static/js/main.71326d79.chunk.js"
   ]
