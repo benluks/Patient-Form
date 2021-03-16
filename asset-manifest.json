@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Patient-Form/static/css/main.7a098bdc.chunk.css",
-    "main.js": "/Patient-Form/static/js/main.89acb40f.chunk.js",
-    "main.js.map": "/Patient-Form/static/js/main.89acb40f.chunk.js.map",
+    "main.js": "/Patient-Form/static/js/main.765b0833.chunk.js",
+    "main.js.map": "/Patient-Form/static/js/main.765b0833.chunk.js.map",
     "runtime-main.js": "/Patient-Form/static/js/runtime-main.a3984edd.js",
     "runtime-main.js.map": "/Patient-Form/static/js/runtime-main.a3984edd.js.map",
     "static/css/2.b88ae1e3.chunk.css": "/Patient-Form/static/css/2.b88ae1e3.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.b88ae1e3.chunk.css",
     "static/js/2.c1e8906c.chunk.js",
     "static/css/main.7a098bdc.chunk.css",
-    "static/js/main.89acb40f.chunk.js"
+    "static/js/main.765b0833.chunk.js"
   ]
 }
